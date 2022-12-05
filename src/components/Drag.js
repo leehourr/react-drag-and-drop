@@ -14,7 +14,6 @@ const Drag = () => {
             key={img.id}
             id={img.id}
             src={img.src}
-            className="w-20 snap-center h-20  object-center object-cover sm:object-cover sm:w-1/5 sm:h-40  mx-2 my-4 sm:my-8 rounded-lg duration-100 ease-linear transition-all hover:scale-150 active:scale-y-150 hover:z-10 active:z-10 hover:object-contain hover:rounded-lg"
             alt="img"
           />
         ))}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { useDrag } from "react-dnd";
 
 const Imgs = ({ id, src, className }) => {
@@ -11,15 +11,15 @@ const Imgs = ({ id, src, className }) => {
   }));
 
   return (
-    <>
+    <Fragment>
       <img
         ref={drag}
         draggable
         src={src}
-        className={isDragging ? "w-20 h-20 sm:w-1/5 sm:h-40 " : "" + className}
+        className="w-24 snap-center h-24  object-center object-cover sm:object-cover sm:w-1/5 sm:h-40  mx-2 my-4 sm:my-8 rounded-lg duration-100 ease-linear transition-all hover:scale-150 active:scale-y-150 hover:z-10 active:z-10 hover:object-contain hover:rounded-lg"
         alt="img"
       />
-    </>
+    </Fragment>
   );
 };
 
