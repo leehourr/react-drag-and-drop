@@ -5,14 +5,13 @@ import Drop from "./components/Drop";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { DndProvider } from "react-dnd";
 
-import images from "./imgs/images";
 
 function App() {
   return (
     <DndProvider backend={HTML5Backend}>
       <div className="w-screen h-screen  bg-zinc-800 overflow-x-hidden">
         <Drag  />
-        <Drop images={images} />
+        <Drop />
       </div>
     </DndProvider>
   );
