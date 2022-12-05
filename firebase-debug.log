@@ -1,0 +1,114 @@
+[debug] [2022-12-05T14:03:37.350Z] ----------------------------------------------------------------------
+[debug] [2022-12-05T14:03:37.352Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\MSI at CTS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-12-05T14:03:37.353Z] CLI Version:   11.15.0
+[debug] [2022-12-05T14:03:37.353Z] Platform:      win32
+[debug] [2022-12-05T14:03:37.353Z] Node Version:  v16.13.2
+[debug] [2022-12-05T14:03:37.354Z] Time:          Mon Dec 05 2022 21:03:37 GMT+0700 (Indochina Time)
+[debug] [2022-12-05T14:03:37.354Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-05T14:03:37.363Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-05T14:03:37.363Z] > authorizing via signed-in user (lhour999@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\drag-and-drop-react
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-12-05T14:03:49.625Z] > refreshing access token with scopes: []
+[debug] [2022-12-05T14:03:49.626Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-12-05T14:03:49.626Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-05T14:03:49.789Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-12-05T14:03:49.789Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-05T14:03:49.798Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-12-05T14:03:50.526Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-12-05T14:03:50.526Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2022-12-05T14:04:11.045Z] ----------------------------------------------------------------------
+[debug] [2022-12-05T14:04:11.047Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\MSI at CTS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2022-12-05T14:04:11.048Z] CLI Version:   11.15.0
+[debug] [2022-12-05T14:04:11.048Z] Platform:      win32
+[debug] [2022-12-05T14:04:11.048Z] Node Version:  v16.13.2
+[debug] [2022-12-05T14:04:11.049Z] Time:          Mon Dec 05 2022 21:04:11 GMT+0700 (Indochina Time)
+[debug] [2022-12-05T14:04:11.049Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-05T14:04:11.056Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-05T14:04:11.056Z] > authorizing via signed-in user (lhour999@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\drag-and-drop-react
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2022-12-05T14:04:44.270Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2022-12-05T14:04:44.270Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"react-drag-and-drop","name":"react-dnd"}
+[debug] [2022-12-05T14:04:45.530Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2022-12-05T14:04:45.530Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2022-12-05T14:04:45.739Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\MSI at CTS\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\MSI at CTS\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID react-drag-and-drop. Please try again with a unique project ID.
+[debug] [2022-12-05T14:05:14.327Z] ----------------------------------------------------------------------
+[debug] [2022-12-05T14:05:14.329Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\MSI at CTS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-12-05T14:05:14.330Z] CLI Version:   11.15.0
+[debug] [2022-12-05T14:05:14.330Z] Platform:      win32
+[debug] [2022-12-05T14:05:14.330Z] Node Version:  v16.13.2
+[debug] [2022-12-05T14:05:14.331Z] Time:          Mon Dec 05 2022 21:05:14 GMT+0700 (Indochina Time)
+[debug] [2022-12-05T14:05:14.331Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-05T14:05:14.338Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-05T14:05:14.338Z] > authorizing via signed-in user (lhour999@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\drag-and-drop-react
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2022-12-05T14:05:45.442Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2022-12-05T14:05:45.442Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"react-dnd","name":"react-dnd"}
+[debug] [2022-12-05T14:05:46.702Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2022-12-05T14:05:46.702Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2022-12-05T14:05:46.833Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\MSI at CTS\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\MSI at CTS\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID react-dnd. Please try again with a unique project ID.

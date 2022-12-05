@@ -5,7 +5,7 @@ import images from "../imgs/images";
 const Drop = ({ id }) => {
   const [board, setBoard] = useState([]);
   const [dropped, setDropped] = useState();
-  const [ drop] = useDrop(() => ({
+  const [{ isOver }, drop] = useDrop(() => ({
     accept: "image",
     drop: (item) => addImageToBoard(item.id),
     collect: (monitor) => ({
@@ -21,7 +21,7 @@ const Drop = ({ id }) => {
   return (
     <div
       ref={drop}
-      className="w-[90%] relative hover:bg-white/40 mx-auto flex items-center justify-center rounded-lg h-1/3 sm:h-1/2 border-2 border-solid border-white"
+      className="w-[90%] relative hover:bg-white/40 mx-auto flex items-center justify-center rounded-lg h-[40%] sm:h-1/2 border-2 border-solid border-white"
     >
       <h1
         className={`${
@@ -33,7 +33,9 @@ const Drop = ({ id }) => {
       {board.map((pic) => (
         <img
           key={pic.id}
-          className="absolute top-0 left-0 w-full h-full rounded-lg object-contain"
+          className={`${
+            isOver ? "object-center" : ""
+          }absolute top-0 left-0 w-full h-full rounded-lg object-contain`}
           alt=""
           src={pic.src}
         />
