@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { useDrag } from "react-dnd";
 
 const Imgs = ({ id, src, className }) => {
-  const [{ isDragging }, drag] = useDrag(() => ({
+  const [ drag] = useDrag(() => ({
     type: "image",
     item: { id: id },
     collect: (monitor) => ({

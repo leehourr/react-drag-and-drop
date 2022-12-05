@@ -5,7 +5,7 @@ import images from "../imgs/images";
 const Drop = ({ id }) => {
   const [board, setBoard] = useState([]);
   const [dropped, setDropped] = useState();
-  const [{ isOver }, drop] = useDrop(() => ({
+  const [ drop] = useDrop(() => ({
     accept: "image",
     drop: (item) => addImageToBoard(item.id),
     collect: (monitor) => ({
