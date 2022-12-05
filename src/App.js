@@ -1,6 +1,5 @@
 import React from "react";
 import Drag from "./components/Drag";
-import { useState } from "react";
 import Drop from "./components/Drop";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { DndProvider } from "react-dnd";
