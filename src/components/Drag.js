@@ -8,7 +8,7 @@ const Drag = () => {
       <h1 className="sm:w-1/3 cursor-pointer uppercase mx-auto text-center">
         drag and drop react
       </h1>
-      <div className="flex h-1/2 items-center sm:justify-center w-full overflow-x-scroll sm:overflow-hidden scroll-smooth ">
+      <div className="flex h-1/2 items-center sm:justify-center w-full overflow-x-scroll overflow-y-hidden sm:overflow-hidden scroll-smooth ">
         {images.map((img) => (
           <Imgs
             key={img.id}
